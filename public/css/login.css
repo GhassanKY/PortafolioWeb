@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+body {
+    background-image: url("../FondoWeb.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg{
+    background-image: url(../image/GhassanKY.svg);
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navegacionLogin {
+    padding: 15px;
+}

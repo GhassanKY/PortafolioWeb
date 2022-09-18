@@ -1,0 +1,21 @@
+body {
+    background-image: url("../FondoWeb.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 'Rubik';
+}
+
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navegacionLogin {
+    padding: 15px;
+}

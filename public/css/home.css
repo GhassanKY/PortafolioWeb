@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+body {
+    background-image: url("../FondoWeb.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-family: 'Rubik';
+    color: white;
+}
+
+button{
+    color: white;
+}
+
+.color{
+    background-color: #ffffff36;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navegacionLogin {
+    padding: 15px;
+}
+
+.ParrafoPrincipal {
+    font-size: 60px;
+    color: white;
+}
+
+.ParrafoSegundario {
+    width: 50vw;
+    font-family: 'Rubik';
+    color: white;
+    font-size: 18px;
+}
+
+.boxRosa {
+    width: 35vw;
+    transition: 5s;
+}
+
+.boxRosa:hover {
+    transform: scale(1.1);
+}
+
+
+
+.cajaPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    margin: 50px
+}
+
+.botonWelcome {
+    width: 300px;
+    font-family: 'Rubik';
+    border: none;
+    background-color: #0a4a56;
+    padding: 7px;
+    color: white;
+    letter-spacing: 0.1em;
+    box-shadow: 11px 13px 31px 8px rgba(0, 0, 0, 0.35);
+}
+
+.contenedorTituloProyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff36;
+}
+
+.proyecto {
+    text-align: center
+}
+
+.proyectoComentario {
+    font-family: 'Rubik';
+    width: 500px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+}
+
+/*Publicaciones Estilos*/
+
+.imagenPOST {
+    width: 30vw;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.proyectoPOST {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 30vw 30vw 30vw;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    background-color: #ffffff36;
+    padding: 50px;
+}
+
+.boxPOST {
+    max-width: 30vw;
+    max-height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: #ffffff6b;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.boxPOST:hover {
+    transform: scale(1.1);
+}
+
+.textoPOST {
+    width: 20vw;
+    padding: 5px;
+}
+
+/*Formulario de contacto*/
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff9e;
+    width: 40vw;
+    padding: 50px;
+    height: 40vw;
+    border-radius: 10px;
+    justify-content: space-around;
+    box-shadow: 20px 13px 41px 10px rgba(0, 0, 0, 0.6);
+}
+
+.contactoBOX {
+    background-color: #ffffff36;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+input[type="text" i] {
+    width: 25vw;
+    border-radius: 15px;
+    border: none;
+    height: 2vw;
+    text-align: center;
+    padding: 5px;
+}
+
+input[type="email" i] {
+    width: 25vw;
+    border-radius: 15px;
+    border: none;
+    height: 2vw;
+    text-align: center;
+}
+
+textarea {
+    width: 400px;
+    max-height: 250px;
+    border: none;
+    resize: none;
+    overflow-y: auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #ecbe73;
+    border: none;
+    width: 150px;
+    height: 40px;
+}
+
+input[type="submit"]:hover {
+    background-color: #c5a470;
+}
+
+
+@media (max-width: 1200px) {
+
+    .cajaPrincipal {
+        display: flex;
+        flex-direction: column;
+    }
+    .proyectoComentario{
+        width: 90vw;
+    }
+    .textoPOST{
+        overflow: hidden;
+    }
+    .imagenRosa{
+        width: 50vw;
+    }
+    .proyectoPOST{
+        grid-template-columns: 30vw 30vw;
+    }
+    .textoPOST{
+        display: none;
+    }
+    .boxPOST{
+        height: 30vw;
+        min-height: none;
+    }
+    .contacto{
+        height: auto;
+        width: 400px;
+    }
+    textarea{
+        width: 350px;
+        margin: 5px;
+    }
+    input[type="text" i]{
+        margin: 5px;
+        width: 300px;
+        height: 25px;
+    }
+
+    input[type="submit" i]{
+        margin: 5px;
+        font-family: 'Rubik';
+        color: white;
+    }
+
+    input[type="email" i]{
+        margin: 5px;
+        width: 300px;
+        height: 25px;
+    }
+
+}

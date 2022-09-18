@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+body {
+    background-image: url("../FondoWeb.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 'Rubik';
+}
+
+p{
+    font-family: 'Rubik';
+}
+
+/* Barra de navegacion superior */
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navegacionLogin {
+    padding: 15px;
+}
+
+/* Modificacion de la imagen del post */
+
+.fatherPOST{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxPOST{
+    background-color: #ffffff36;
+    max-width: 90vw;
+    min-width: 400px;
+    display: flex;
+    height: 49vw;
+    margin: 20px;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.imagenPOST {
+    max-width: 50vw;
+    min-width: 400px;
+    padding: 25px;
+}
+
+.textoPOST{
+    max-width: 50vw;
+    min-width: 400px;
+    padding: 25px;
+    color: white;
+}
+
+.iconoSelect{
+    color: black;
+    transition: transform 0.5s;
+    cursor: pointer;
+    float: right;
+    margin: 5px;
+}
+.iconoSelect:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 1000px) {
+    .boxPOST {
+        min-width: 399px;
+        display: flex;
+        height: auto;
+        min-height: 600px;
+        flex-direction: column;
+    
+}
+}
